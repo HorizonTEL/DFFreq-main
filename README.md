@@ -30,4 +30,4 @@
 
 ##
 
-**This repository is the official repository of the DFFreq.**
+**This repository is the official repository of the DFFreq-main.**
