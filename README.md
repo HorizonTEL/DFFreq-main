@@ -13,7 +13,7 @@
 
 <sup>1</sup>Nanjing University of Information Science and Technology
 <p align="center">
-  <a href='https://github.com/HorizonTEL/DFFreq'>
+  <a href='https://github.com/HorizonTEL/DFFreq-main'>
     <img src='https://img.shields.io/badge/Project-Page-pink?style=flat&logo=Google%20chrome&logoColor=pink'>
   </a>
   <a href='https://arxiv.org/abs/2501.15253'>
