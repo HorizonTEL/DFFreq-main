@@ -28,6 +28,35 @@
 ## 🔥 News
 * [2026-02-07]🎉🎉🎉 DFFreq is accepted by IEEE Transactions on Information Forensics & Security.
 
-##
+## ⏳ Quick Start
+### 1. Installation
+```
+conda create -n DFFreq -y python=3.9
+conda activate DFFreq
+pip3 install torch torchvision
+pip install -r requirements.txt 
+```
+### 2.Getting datasets
+| Datasets          |    Paper                                                                                                               |    Url    |
+|:------:           |:---------:                                                                                                             |:---------:|
+| GANGen-Detection  | Frequency-Aware Deepfake Detection: Improving Generalizability through Frequency Space Domain Learning (AAAI 2024)     | [Google Drive](https://drive.google.com/drive/folders/11E0Knf9J1qlv2UuTnJSOFUjIIi90czSj) |
+| DiffusionForensics| DIRE for Diffusion-Generated Image Detection (ICCV 2023)                                                               | [Google Drive](https://drive.google.com/drive/folders/1jZE4hg6SxRvKaPYO_yyMeJN_DOcqGMEf) |
+| UniversalFakeDetect| Towards Universal Fake Image Detectors that Generalize Across Generative Models (CVPR 2023)                            | [Google Drive](https://drive.google.com/drive/folders/1nkCXClC7kFM01_fqmLrVNtnOYEFPtWO-) |
+| AIGCDetectBench   | PatchCraft: Exploring Texture Patch for Efficient AI-generated Image Detection                                         | [ModelScope](https://modelscope.cn/datasets/aemilia/AIGCDetectionBenchmark/tree/master/AIGCDetectionBenchMark) |
+| AIGIBench         | Is Artificial Intelligence Generated Image Detection a Solved Problem? (NeurIPS 2025)                                  | [Huggingface](https://huggingface.co/datasets/HorizonTEL/AIGIBench)/[Baidu Netdisk](https://pan.baidu.com/s/1XTwfXlfqkGxAwYLxXuZbfA?pwd=sm6v) |
+### 3.Inference
+Of course, you need to change [DetectionTests] in test.py when testing.
 
-**This repository is the official repository of the DFFreq-main.**
+We present our inference results in log_test.log.
+```
+python test.py --model_path ./checkpoints/model_epoch_last.pth
+```
+
+## ⏳ Training
+The training set uses four classes from CNN-Spot(CNN-generated images are surprisingly easy to spot...for now, CVPR 2020): car, cat, chair, and horse. [Baidu Netdisk](https://pan.baidu.com/s/1l-rXoVhoc8xJDl20Cdwy4Q?pwd=ft8b)
+```
+python train.py --name 4class-car-cat-chair-horse --dataroot [training datasets path] --classes car,cat,chair,horse
+```
+## Contact
+If you have any question about this project, please feel free to contact 247918horizon@gmail.com
+
