@@ -57,6 +57,18 @@ The training set uses four classes from CNN-Spot(CNN-generated images are surpri
 ```
 python train.py --name 4class-car-cat-chair-horse --dataroot [training datasets path] --classes car,cat,chair,horse
 ```
+
+## Citation 
+```
+@article{yan2026dual,
+  title={Dual Frequency Branch Framework with Reconstructed Sliding Windows Attention for AI-Generated Image Detection},
+  author={Yan, Jiazhen and Li, Ziqiang and Wang, Fan and He, Ziwen and Fu, Zhangjie},
+  journal={IEEE Transactions on Information Forensics and Security},
+  year={2026},
+  publisher={IEEE}
+}
+```
+
 ## Contact
 If you have any question about this project, please feel free to contact 247918horizon@gmail.com
 
