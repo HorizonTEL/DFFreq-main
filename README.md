@@ -31,7 +31,7 @@
 ## ⏳ Quick Start
 ### 1. Installation
 ```
-conda create -n DFFreq -y python=3.9
+conda create -n DFFreq -y python=3.10
 conda activate DFFreq
 pip3 install torch torchvision
 pip install -r requirements.txt 
